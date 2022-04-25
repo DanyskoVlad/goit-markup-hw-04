@@ -13,21 +13,30 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- ШАПКА СТОРІНКИ -->
+<!-- ШАПКА СТОРІНКИ -->
     <header class="header">
         <div class="container main-nav">
             <a class="header-logo" href="./index.html"><span class="logo-part">Web</span>Studio</a>
             <nav class="header-nav">
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="./index.html" class="menu-link">Студия</a></li>
-                    <li class="menu-item"><a href="./portfolio.html" class="menu-link current">Портфолио</a></li>
+                    <li class="menu-item"><a href="./index.html" class="menu-link current">Студия</a></li>
+                    <li class="menu-item"><a href="./portfolio.html" class="menu-link">Портфолио</a></li>
                     <li class="menu-item"><a href="" class="menu-link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="contact-list">
-                <li class="contact-name"><a class="contact-info" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="contact-name">
+                    <svg class="icon mail">
+                        <use href="./images/sprite.svg#icon-iconmail"></use>
+                    </svg>
+                    <a class="contact-info" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="contact-name"><a class="contact-info" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="contact-name">
+                    <svg class="icon phone">
+                        <use href="./images/sprite.svg#icon-iconphone"></use>
+                    </svg>
+                    <a class="contact-info" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
     </header>
