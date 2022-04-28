@@ -88,33 +88,20 @@ margin-left: 93px;
     margin-left: auto;
 }
 
-.contact-name + .contact-name {
+.contact-name+.contact-name {
     margin-left: 50px;
 }
 
 .contact-info {
+    display: flex;
+    align-items: center;
     color: var(--primary-text-color);
 }
 
-.icon {
-    display: inline-flex;
+.contact-icon {
     margin-right: 10px;
-    fill: #757575;
+    fill: currentColor;
     cursor: pointer;
-}
-
-.mail {
-    width: 16px;
-    height: 12px;
-}
-
-.phone {
-    width: 10px;
-    height: 16px;
-}
-
-.icon:hover {
-    fill: var(--accent-color);
 }
 
 .menu-link, 
@@ -133,7 +120,7 @@ margin-left: 93px;
 .menu-link:hover,
 .menu-link:focus,
 .contact-info:hover,
-.contact-info:focus {
+.contact-info:focus{
     color: var(--accent-color);
 }
 
@@ -350,20 +337,17 @@ margin-left: 93px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-}
-
-.social-link-phon:hover,
-.social-link-phon:focus {
-    background-color: var(--accent-color);
+    color: #afb1b8;
 }
 
 .social-link-type {
-    fill: #afb1b8;
+    fill: currentColor;
 }
 
-.social-link-type:hover,
-.social-link-type:focus {
-    fill: #FFFFFF;
+.social-link-phon:hover,
+.social-link-phon:focus{
+    color: #FFFFFF;
+    background-color: var(--accent-color);
 }
 
 /* ПОСТІЙНІ КЛІЄНТИ */
@@ -398,31 +382,37 @@ margin-left: 93px;
     justify-content: center;
     width: 170px;
     height: 92px;
-
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
     cursor: pointer;
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
     border: 1px solid var(--accent-color);
+    color: var(--accent-color);
 }
 
 .client-link {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+
+    /* color: #AFB1B8; */
 }
 
 .client-logo {
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
-.client-logo:hover,
-.client-logo:focus {
-    fill: var(--accent-color);
-}
+/* .client-link:hover,
+.client-link:focus {
+    color: var(--accent-color);
+} */
 
 /* ПІДВАЛ */
 
@@ -576,10 +566,11 @@ address {
     border: 1px solid #EEEEEE;
 }
 
-.poster-item:hover{
-    box-shadow: 1px 4px 6px 0px #00000029;
-    box-shadow: 0px 4px 4px 0px #0000000F;
-    box-shadow: 0px 1px 1px 0px #0000001F;
+.poster-item:hover,
+.poster-item:focus {
+    box-shadow:  1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .poster-item:nth-child(3n) {
